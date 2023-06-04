@@ -28,7 +28,7 @@
         <h2><span>Book Registration</span></h2>
         <ul>
             <li><a href="index.php"><i class="fas fa-book"> All Books</i></a></li>
-            <li><a href="add_book.php"><i class="fas fa-plus"> Add New Book</i></a></li>
+            <li><a href="add_book.html"><i class="fas fa-plus"> Add New Book</i></a></li>
             <li><a href="update_book.php"><i class="fas fa-pen-to-square"> Update Book</i></a></li>
             <li><a href="delete_book.php"><i class="fas fa-trash"> Delete Book</i></a></li>
             <li><a href="logout_action.php" onclick="return confirm('Çıkış yapmak istediğinize emin misiniz?')"><i class="fas fa-xmark"> Log out</i></a></li>
