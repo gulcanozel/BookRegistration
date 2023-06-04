@@ -37,14 +37,14 @@
         <h2>Please select the book you want to delete</h2>
         <div class="content">
             <?php
-            // Veritabanı bağlantısını yapın
+
             $conn = mysqli_connect("localhost", "root", "", "bookregistration");
 
             // Tüm kitapları seçin
             $query = "SELECT * FROM books";
             $result = mysqli_query($conn, $query);
 
-            // Kitapları görüntüleyin
+
             if (mysqli_num_rows($result) > 0) {
                 echo "<form action='confirm_delete.php' method='post'>";
                 echo "<select name='book_id'>";
@@ -58,7 +58,7 @@
                 echo "Kitap bulunamadı.";
             }
 
-            // Veritabanı bağlantısını kapatın
+
             mysqli_close($conn);
             ?>
         </div>

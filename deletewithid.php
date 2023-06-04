@@ -39,14 +39,14 @@
         <div class="content">
 
             <?php
-            // Veritabanı bağlantısını yapın
+
             $conn = mysqli_connect("localhost", "root", "", "bookregistration");
 
-            // Silinecek kitabın ID'sini alın
+
             if (isset($_GET['id'])) {
                 $book_id = $_GET['id'];
 
-                // Kitabı veritabanından seçin
+
                 $query = "SELECT * FROM books WHERE id = $book_id";
                 $result = mysqli_query($conn, $query);
 
@@ -66,7 +66,7 @@
                 echo "Geçersiz kitap ID'si.";
             }
 
-            // Veritabanı bağlantısını kapatın
+
             mysqli_close($conn);
             ?>
         </div>

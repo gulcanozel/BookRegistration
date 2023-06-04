@@ -6,7 +6,6 @@
 </head>
 <body>
 <div class="container">
-
     <div class="content">
         <form action="login_process.php" method="post">
             <h2>Giriş Yap</h2>

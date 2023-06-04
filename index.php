@@ -50,7 +50,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        // Veritabanı bağlantısını yapın
+
                         $conn = mysqli_connect("localhost", "root", "", "bookregistration");
 
                         // Tüm kitapları seçin
@@ -66,8 +66,8 @@
                                     <td><?php echo $row['page_count']; ?></td>
                                     <td><?php echo $row['genre']; ?></td>
                                     <td>
-                                        <a href="update_book.php?id=<?php echo $row['id']; ?>" class="btn-update"><i class="fas fa-edit"></i> Güncelle</a>
-                                        <a href="deletewithid.php?id=<?php echo $row['id']; ?>" class="btn-delete" ><i class="fas fa-trash"></i> Sil</a>
+                                        <a href="update_book.php?id=<?php echo $row['id']; ?>" class="btn-update"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="deletewithid.php?id=<?php echo $row['id']; ?>" class="btn-delete" ><i class="fas fa-trash"></i> Delete</a>
                                     </td>
                                 </tr>
                                 <?php
@@ -76,7 +76,7 @@
                             echo "<tr><td colspan='5'>Kayıtlı kitap bulunamadı.</td></tr>";
                         }
 
-                        // Veritabanı bağlantısını kapatın
+
                         mysqli_close($conn);
                         ?>
                         </tbody>

@@ -37,10 +37,10 @@
     <div class="content">
         <h1>Update Book</h1>
         <?php
-        // Veritabanı bağlantısını yapın
+
         $conn = mysqli_connect("localhost", "root", "", "bookregistration");
 
-        // Güncellenecek kitabın ID'sini alın
+
         if (isset($_GET['id'])) {
             $book_id = $_GET['id'];
 
@@ -80,7 +80,6 @@
             echo "You can do this from the ALL BOOKS page.";
         }
 
-        // Veritabanı bağlantısını kapatın
         mysqli_close($conn);
         ?>
     </div>
